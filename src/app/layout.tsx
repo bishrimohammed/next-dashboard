@@ -16,7 +16,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <div className="flex">
+          {/* <div className="w-60">
+            <ul>
+              <li className="p-2">
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+            </ul>
+          </div> */}
+          <div className=" flex-1">
+            {/* <header className="p-3">Header</header> */}
+            <main>{children}</main>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
